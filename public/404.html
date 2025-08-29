@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafgraph/spa-github-pages
+      // Pega o caminho da URL (ex: /Du-Mi/contato)
+      var path = window.location.pathname;
+
+      // Pega o nome do segmento do repositório (ex: /Du-Mi)
+      var repo = '/' + path.split('/')[1];
+
+      // Pega a URL completa da rota dentro do app (ex: /contato)
+      var appPath = path.slice(repo.length);
+
+      // Redireciona para index.html, passando a rota como parâmetro
+      window.location.replace(
+        window.location.origin +
+        repo +
+        '/?p=' + appPath +
+        '&q=' + window.location.search.slice(1)
+      );
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
